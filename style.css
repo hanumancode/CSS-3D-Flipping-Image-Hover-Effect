@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 400px;
+    background: #000;
+    transform-style: preserve-3d;
+    transition: 2s;
+    transform: perspective(500px) rotateY(0deg);
+}
+.box:hover {
+    transform: perspective(500px) rotateY(180deg);
+    background: blueviolet;
+}
+
